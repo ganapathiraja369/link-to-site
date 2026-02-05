@@ -114,7 +114,7 @@
              <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
                <p>
                  I'm an experienced developer with over <span className="text-foreground font-medium">5 years in Java 8</span> and{" "}
-                 <span className="text-foreground font-medium">2 years in React.js</span>. My expertise lies in building 
+                 <span className="text-foreground font-medium">React.js</span>. My expertise lies in building 
                  enterprise-grade applications using Spring Boot and microservices architecture.
                </p>
                <p>

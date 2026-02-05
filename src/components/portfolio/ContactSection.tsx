@@ -1,6 +1,6 @@
  import { motion, useInView } from "framer-motion";
  import { useRef, useState } from "react";
- import { Mail, Phone, MapPin, Linkedin, Github, Send, MessageSquare, Calendar, Coffee } from "lucide-react";
+ import { Mail, Phone, MapPin, Linkedin, Github, Send, MessageSquare, Calendar, Coffee, User } from "lucide-react";
  import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
  import { Button } from "@/components/ui/button";
  import { Input } from "@/components/ui/input";
@@ -53,13 +53,13 @@
      status: "Coming Soon",
      color: "teal",
    },
-   {
-     icon: Coffee,
-     title: "Buy Me a Coffee",
-     description: "Support my work",
-     status: "Coming Soon",
-     color: "rose",
-   },
+    {
+      icon: User,
+      title: "Mentorship",
+      description: "Career & tech guidance",
+      status: "Coming Soon",
+      color: "amber",
+    },
  ];
  
  export const ContactSection = () => {

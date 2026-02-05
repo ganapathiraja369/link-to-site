@@ -20,9 +20,9 @@
    },
    {
      icon: Award,
-     title: "SSRD Solar Certificate",
-     duration: "Schneider Company",
-     description: "Installed solar equipment in 100+ houses in Sundarbans, West Bengal, contributing to sustainable energy initiatives.",
+     title: "Schneider Electric India",
+     duration: "As a part of rural develompment",
+     description: "Installed solar power solutions for 100+ households in remote Sundarbans islands, West Bengal, providing essential electricity in regions without grid connectivity.",
      color: "accent",
    },
  ];
