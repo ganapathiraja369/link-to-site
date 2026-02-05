@@ -7,7 +7,7 @@
  const experiences = [
    {
      company: "Ernst & Young GDS India LLP",
-     role: "Technical Lead",
+     role: "Sr. Technical Lead",
      location: "Hyderabad, Telangana",
      period: "September 2024 – Present",
      type: "current",

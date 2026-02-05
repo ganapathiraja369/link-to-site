@@ -1,12 +1,13 @@
  import { motion } from "framer-motion";
- import { Code2, Heart, ArrowUp, Linkedin, Github, Mail, Phone } from "lucide-react";
+ import { Code2, Heart, ArrowUp, Linkedin, Github, Mail, Phone, Instagram } from "lucide-react";
  import { Button } from "@/components/ui/button";
  
  const socialLinks = [
    { icon: Mail, href: "mailto:meetme.ganapathi@gmail.com", label: "Email" },
    { icon: Phone, href: "tel:+918332080961", label: "Phone" },
    { icon: Linkedin, href: "https://www.linkedin.com/in/ganapathi-raja369/", label: "LinkedIn" },
-   { icon: Github, href: "https://github.com/ganapathi-raja369", label: "GitHub" },
+   { icon: Github, href: "https://github.com/ganapathiraja369", label: "GitHub" },
+   { icon: Instagram, href: "https://www.instagram.com/mr_thope07", label: "Instagram" },
  ];
  
  const quickLinks = [
@@ -52,7 +53,7 @@
              >
                <Code2 className="h-6 w-6 text-primary" />
                <span>
-                 <span className="text-primary">G</span>anapathi
+                 <span className="text-primary">G</span>anapathi <span className="text-primary">R</span>aja
                </span>
              </motion.a>
              <p className="text-sm text-muted-foreground leading-relaxed mb-6">
@@ -109,6 +110,10 @@
                <p className="flex items-center gap-2">
                  <Linkedin className="h-4 w-4 text-primary" />
                  ganapathi-raja369
+               </p>
+               <p className="flex items-center gap-2">
+                 <Instagram className="h-4 w-4 text-primary" />
+                 Mr_Thope07
                </p>
              </div>
            </div>

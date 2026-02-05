@@ -70,8 +70,8 @@
                    >
                      GD
                    </motion.div>
-                   <h3 className="text-xl font-heading font-bold mb-1">Sri Ganapathi Dulla</h3>
-                   <p className="text-muted-foreground text-sm">Technical Lead @ EY</p>
+                   <h3 className="text-xl font-heading font-bold mb-1">Sri Ganapathi Raja</h3>
+                   <p className="text-muted-foreground text-sm">Senior Technical Lead @ EY</p>
                  </div>
                </div>
  

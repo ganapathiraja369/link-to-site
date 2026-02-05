@@ -1,5 +1,5 @@
  import { motion } from "framer-motion";
- import { ArrowDown, MapPin, Mail, Phone, Linkedin, Github, Download } from "lucide-react";
+ import { ArrowDown, MapPin, Mail, Phone, Linkedin, Github, Download, Instagram } from "lucide-react";
  import { Button } from "@/components/ui/button";
  
  export const HeroSection = () => {
@@ -64,7 +64,7 @@
            <motion.p
              initial={{ opacity: 0, y: 20 }}
              animate={{ opacity: 1, y: 0 }}
-             transition={{ delay: 0.2 }}
+             transition={{ delay: 0.2, duration: 0.6 }}
              className="text-muted-foreground font-mono text-sm md:text-base mb-4"
            >
              👋 Hello, I'm
@@ -77,7 +77,7 @@
              transition={{ delay: 0.4, duration: 0.6 }}
              className="text-4xl sm:text-5xl md:text-7xl font-heading font-bold mb-4"
            >
-             <span className="text-gradient">Sri Ganapathi</span>{" "}
+             <span className="text-gradient">Sri Ganapathi Raja</span>{" "}
              <span className="text-foreground">Dulla</span>
            </motion.h1>
  
@@ -177,7 +177,8 @@
                { icon: Mail, href: "mailto:meetme.ganapathi@gmail.com", label: "Email" },
                { icon: Phone, href: "tel:+918332080961", label: "Phone" },
                { icon: Linkedin, href: "https://www.linkedin.com/in/ganapathi-raja369/", label: "LinkedIn" },
-               { icon: Github, href: "https://github.com/ganapathi-raja369", label: "GitHub" },
+               { icon: Github, href: "https://github.com/ganapathiraja369", label: "GitHub" },
+               { icon: Instagram, href: "https://www.instagram.com/mr_thope07", label: "Instagram" }
              ].map((social, index) => (
                <motion.a
                  key={social.label}

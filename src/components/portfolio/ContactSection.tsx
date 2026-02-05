@@ -68,18 +68,36 @@
    const { toast } = useToast();
    const [formData, setFormData] = useState({ name: "", email: "", message: "" });
  
-   const handleSubmit = (e: React.FormEvent) => {
-     e.preventDefault();
-     // Since this is a static site, we'll just show a toast
-     toast({
-       title: "Message Sent!",
-       description: "Thanks for reaching out. I'll get back to you soon!",
-     });
-     setFormData({ name: "", email: "", message: "" });
-   };
+  //  const handleSubmit = (e: React.FormEvent) => {
+  //    e.preventDefault();
+  //    // Since this is a static site, we'll just show a toast
+  //    toast({
+  //      title: "Message Sent!",
+  //      description: "Thanks for reaching out. I'll get back to you soon!",
+  //    });
+  //    setFormData({ name: "", email: "", message: "" });
+  //  };
+
+      const handleSubmit = () => {
+      toast({
+        title: "Message Sent!",
+        description: "Thanks for reaching out. I'll get back to you soon!",
+      });
+
+      setTimeout(() => {
+        setFormData({ name: "", email: "", message: "" });
+      }, 500);
+    };
+
  
    return (
      <section id="contact" className="py-20 md:py-32 relative overflow-hidden">
+      <iframe
+        name="hidden_iframe"
+        style={{ display: "none" }}
+        title="hidden_iframe"
+      />
+
        {/* Background Elements */}
        <div className="absolute inset-0 pattern-grid opacity-30" />
        <motion.div
@@ -238,9 +256,17 @@
                  </CardDescription>
                </CardHeader>
                <CardContent>
-                 <form onSubmit={handleSubmit} className="space-y-4">
+                 {/* <form onSubmit={handleSubmit} className="space-y-4"> */}
+                 <form
+                    action="https://script.google.com/macros/s/AKfycbyd-AWA_ZWWx9hsDmNHOq_MQQ8Fc09K6cW4Pmseeiac4HxJUWne92xFmEMT8at0EYz7/exec"
+                    method="POST"
+                    onSubmit={handleSubmit}
+                    className="space-y-4"
+                    target="hidden_iframe"
+                  >
                    <div>
                      <Input
+                       name="name"
                        placeholder="Your Name"
                        value={formData.name}
                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -250,6 +276,7 @@
                    </div>
                    <div>
                      <Input
+                       name="email"
                        type="email"
                        placeholder="Your Email"
                        value={formData.email}
@@ -260,6 +287,7 @@
                    </div>
                    <div>
                      <Textarea
+                       name="message"
                        placeholder="Your Message"
                        value={formData.message}
                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}

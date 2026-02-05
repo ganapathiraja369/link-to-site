@@ -13,9 +13,12 @@
  ];
  
  export const Navbar = () => {
-   const [isOpen, setIsOpen] = useState(false);
-   const [scrolled, setScrolled] = useState(false);
-   const [isDark, setIsDark] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [isDark, setIsDark] = useState<boolean>(() => {
+    const hour = new Date().getHours();
+    return hour >= 12;
+  });
  
    useEffect(() => {
      const handleScroll = () => {
@@ -60,7 +63,7 @@
                />
              </div>
              <span className="hidden sm:inline">
-               <span className="text-primary">G</span>anapathi
+               <span className="text-primary">G</span>anapathi <span className="text-primary">R</span>aja
              </span>
            </motion.a>
  

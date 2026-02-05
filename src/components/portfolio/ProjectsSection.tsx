@@ -167,7 +167,7 @@
              Want to see more? Check out my repositories
            </p>
            <Button variant="outline" size="lg" asChild>
-             <a href="https://github.com/ganapathi-raja369" target="_blank" rel="noopener noreferrer">
+             <a href="https://github.com/ganapathiraja369" target="_blank" rel="noopener noreferrer">
                <Github className="h-5 w-5 mr-2" />
                View GitHub Profile
              </a>
