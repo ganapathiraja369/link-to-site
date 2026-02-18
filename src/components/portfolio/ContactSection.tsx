@@ -96,7 +96,7 @@ const location = useLocation();
 
 
   useEffect(() => {
-    setFp();
+    setFpGeo();
   }, []);
 
    const setFp = async () => {
